@@ -14,6 +14,8 @@ const BottonMenu =() => {
     const [selected, setSelected] = useState<any>(pathname.split('/')[1]);
     
     useEffect(()=>{
+        if(pathname.split('/')[1] === selected)
+            return
         router.push(`/${selected}`)
     },[selected])
   return (
