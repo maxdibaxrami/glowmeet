@@ -14,7 +14,7 @@ export default function DefaultLayout({
     <div className="relative flex flex-col h-screen">
       <Head />
       {/** */}
-      <main className="container mx-auto max-w-7xl px-6 flex-grow pt-4">
+      <main className="container mx-auto max-w-7xl px-2 flex-grow pt-4">
         {children}
       </main>
       <BottonMenu/>

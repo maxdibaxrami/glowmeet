@@ -5,6 +5,7 @@ import {Explore} from "./icons/Explore"
 import {ChatIcon} from "./icons/Chat"
 import { useRouter } from 'next/router'
 import { usePathname } from 'next/navigation'
+import {User} from "@nextui-org/react";
 
 
 const BottonMenu =() => {
