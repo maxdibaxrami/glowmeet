@@ -11,13 +11,10 @@ const BottonMenu =() => {
     const router = useRouter()
     const pathname = usePathname()
 
-    const [selected, setSelected] = useState<any>(pathname.split('/')[1]);
+    const [selected, setSelected] = useState<any>("explore");
+
     
-    useEffect(()=>{
-        if(pathname.split('/')[1] === selected)
-            return
-        router.push(`/${selected}`)
-    },[selected])
+    
   return (
     <div className="fixed items-center bottom-0 flex w-full flex-col z-50 buttommenumahdi">
       <Tabs
@@ -27,7 +24,10 @@ const BottonMenu =() => {
        style={{width:"max-content",borderRadius:10}}
        variant="bordered"
        selectedKey={selected}
-       onSelectionChange={setSelected}
+       onSelectionChange={e=> {
+        router.push(`/${e}`)
+        setSelected(e)
+       }}
        >
         <Tab
           key="explore"

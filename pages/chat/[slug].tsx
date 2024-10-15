@@ -1,7 +1,7 @@
 import DefaultLayout from "@/layouts/default";
 import { useRouter } from 'next/router'
 
-export default function ChatPageSlug() {
+const ChatSlugPage = () => {
     const router = useRouter()
 
   return (
@@ -10,3 +10,5 @@ export default function ChatPageSlug() {
     </DefaultLayout>
   );
 }
+
+export default ChatSlugPage
