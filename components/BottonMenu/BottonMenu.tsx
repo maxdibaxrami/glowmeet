@@ -14,7 +14,7 @@ const BottonMenu =() => {
         router.push(`/${selected}`)
     },[selected])
   return (
-    <div className="fixed items-center bottom-0 flex w-full flex-col z-50">
+    <div className="fixed items-center bottom-0 flex w-full flex-col z-50 buttommenumahdi">
       <Tabs
        aria-label="Options" 
        className="justify-around mb-4 bg-white/80" 
