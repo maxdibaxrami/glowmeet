@@ -11,9 +11,10 @@ const BottonMenu =() => {
     const router = useRouter()
     const pathname = usePathname()
 
+
     const [selected, setSelected] = useState<any>("explore");
 
-    
+
     
   return (
     <div className="fixed items-center bottom-0 flex w-full flex-col z-50 buttommenumahdi">

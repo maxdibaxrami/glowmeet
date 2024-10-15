@@ -10,7 +10,7 @@ const UserCart = () => {
     return  <div className="relative" style={{paddingBottom:"40px",overflow:"scroll",height:"93vh"}}>
         <Card className="m-4 mb-4 pb-16">
     
-        <div style={{top:"700px"}} className="fixed justify-center z-10 inset-x-0 flex gap-4 items-center">
+        <div style={{bottom:"10%"}} className="fixed justify-center z-10 inset-x-0 flex gap-4 items-center">
             <Button style={{width:"60px",height:"60px",marginBottom:"20px",backgroundColor:"white"}} className=" h-16 shadow" isIconOnly  aria-label="Like">
                 <XmarkIcon />
             </Button>   
