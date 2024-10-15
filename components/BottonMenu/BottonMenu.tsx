@@ -12,23 +12,21 @@ const BottonMenu =() => {
 
     useEffect(()=>{
         router.push(`/${selected}`)
-        console.log('====================================');
-        console.log(selected);
-        console.log('====================================');
     },[selected])
   return (
-    <div className="flex w-full flex-col">
+    <div className="fixed items-center bottom-0 flex w-full flex-col z-50">
       <Tabs
        aria-label="Options" 
-       className="justify-around mb-4" 
+       className="justify-around mb-4 bg-white/80" 
        color="primary" 
+       style={{width:"max-content",borderRadius:10}}
        variant="bordered"
        selectedKey={selected}
        onSelectionChange={setSelected}
        >
         <Tab
           key="explore"
-          className="h-10"
+          className="h-10 "
           title={
             <div className="flex items-center space-x-2 h-10">
               <Explore/>

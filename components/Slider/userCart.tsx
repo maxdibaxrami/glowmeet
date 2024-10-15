@@ -7,10 +7,10 @@ import {CheckIcon} from './icons/check'
 import {MoreImageGallary} from './moreImage'
 const UserCart = () => {
 
-    return  <ScrollShadow visibility={"none"} hideScrollBar={false} style={{maxHeight:"80vh",overflow:"scroll",paddingBottom:"40px"}}>
-        <Card className="m-4 relative mb-4 pb-16">
+    return  <div className="relative" style={{paddingBottom:"40px",overflow:"scroll",height:"93vh"}}>
+        <Card className="m-4 mb-4 pb-16">
     
-        <div className="fixed justify-center z-10 inset-x-0 bottom-0 flex gap-4 items-center">
+        <div style={{top:"700px"}} className="fixed justify-center z-10 inset-x-0 flex gap-4 items-center">
             <Button style={{width:"60px",height:"60px",marginBottom:"20px",backgroundColor:"white"}} className=" h-16 shadow" isIconOnly  aria-label="Like">
                 <XmarkIcon />
             </Button>   
@@ -81,7 +81,7 @@ const UserCart = () => {
     
       </CardBody>
     </Card>
-  </ScrollShadow>
+  </div>
 }
 
 export {UserCart}
