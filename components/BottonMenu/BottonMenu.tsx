@@ -4,12 +4,15 @@ import {Profile} from "./icons/Profile";
 import {Explore} from "./icons/Explore"
 import {ChatIcon} from "./icons/Chat"
 import { useRouter } from 'next/router'
+import { usePathname } from 'next/navigation'
 
 
 const BottonMenu =() => {
     const router = useRouter()
-    const [selected, setSelected] = useState<any>("explore");
+    const pathname = usePathname()
 
+    const [selected, setSelected] = useState<any>(pathname.split('/')[1]);
+    
     useEffect(()=>{
         router.push(`/${selected}`)
     },[selected])
