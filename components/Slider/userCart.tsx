@@ -5,6 +5,7 @@ import {HeartIcon} from './icons/heart'
 import {XmarkIcon} from './icons/xmark'
 import {CheckIcon} from './icons/check'
 import {MoreImageGallary} from './moreImage'
+
 const UserCart = () => {
 
     return  <div className="relative" style={{paddingBottom:"40px",overflow:"scroll",height:"93vh"}}>
@@ -19,15 +20,8 @@ const UserCart = () => {
                 
             </Button>  
      </div>
-        <CardHeader className="pt-4 px-4 flex-col items-start">
-            <h4 className=" flex items-center font-bold text-large">
-            <VerifyIcon />
-                Mahdi bahrami 
-            </h4>
-    
-            <small style={{paddingLeft:"27px"}} className="text-default-500 text-small">24 year old</small>
-          </CardHeader>
-      <CardBody className="pt-0">
+        
+      <CardBody className="pt-4">
       <Image
             width={'100%'}
             height={400}
@@ -35,18 +29,18 @@ const UserCart = () => {
             alt="NextUI hero Image with delay"
             src="https://app.requestly.io/delay/5000/https://nextui.org/images/hero-card-complete.jpeg"
             />
+<CardHeader className="pt-4 px-2 flex-col items-start">
+            <h4 className=" flex items-center font-bold text-large">
+                Mahdi bahrami 
+                <VerifyIcon />
+
+            </h4>
+    
+            <small  className="text-default-500 text-small">24 year old</small>
+          </CardHeader>
 
 
-            <div className="px-2">
-                <small style={{paddingTop:"10px"}} className="text-default-500">About me</small>
-                <p className="text-black text-tiny">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-                </p>
-
-            </div>
-
-            <div className="px-2">
+          <div className="px-2">
                 <small style={{paddingTop:"10px"}} className="text-default-500">info</small>
                 
                 <div className="flex gap-4">
@@ -67,6 +61,17 @@ const UserCart = () => {
                     </div>
 
             </div>
+
+            <div className="px-2">
+                <small style={{paddingTop:"10px"}} className="text-default-500">About me</small>
+                <p className="text-black text-tiny">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                </p>
+
+            </div>
+
+           
             <div className="px-2 mt-4">
                 <MoreImageGallary/>
             </div>
