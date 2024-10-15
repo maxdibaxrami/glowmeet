@@ -11,7 +11,7 @@ const BottonMenu =() => {
     const router = useRouter()
     const pathname = usePathname()
     
-
+    
 
 
     
@@ -23,7 +23,7 @@ const BottonMenu =() => {
        color="primary" 
        style={{width:"max-content",borderRadius:10}}
        variant="bordered"
-       selectedKey={pathname.split('/')[1]}
+       selectedKey={pathname ? pathname.split('/')[1] : 'chat'}
        onSelectionChange={e=> {
         router.push(`/${e}`)
        }}
