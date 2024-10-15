@@ -9,7 +9,7 @@ body{
 
 
 .swiper {
-  width: 95vw;
+  width: 100vw;
   max-height: 93vh;
   overflow: scroll;
 }

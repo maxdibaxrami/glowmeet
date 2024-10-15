@@ -25,7 +25,7 @@ const UserCart = () => {
                 Mahdi bahrami 
             </h4>
     
-            <small style={{paddingLeft:"27px"}} className="text-default-500">24 year old</small>
+            <small style={{paddingLeft:"27px"}} className="text-default-500 text-small">24 year old</small>
           </CardHeader>
       <CardBody className="pt-0">
       <Image
