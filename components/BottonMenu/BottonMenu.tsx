@@ -10,9 +10,8 @@ import { usePathname } from 'next/navigation'
 const BottonMenu =() => {
     const router = useRouter()
     const pathname = usePathname()
+    
 
-
-    const [selected, setSelected] = useState<any>("explore");
 
 
     
@@ -24,10 +23,9 @@ const BottonMenu =() => {
        color="primary" 
        style={{width:"max-content",borderRadius:10}}
        variant="bordered"
-       selectedKey={selected}
+       selectedKey={pathname.split('/')[1]}
        onSelectionChange={e=> {
         router.push(`/${e}`)
-        setSelected(e)
        }}
        >
         <Tab
