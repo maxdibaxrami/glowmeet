@@ -1,5 +1,5 @@
 import React from 'react' 
-import {Listbox, ListboxItem} from "@nextui-org/react";
+import {Listbox, ListboxItem, Badge, Avatar} from "@nextui-org/react";
 import {ListboxWrapper} from "./ChatWapper";
 import {User} from "@nextui-org/react";
 import {FavoriteIcon} from './icons/favorite'
@@ -17,12 +17,18 @@ const CHatList = () => {
             return       <ListboxItem
             endContent={<FavoriteIcon />}
             key="new">
+
+<Badge content="" color="success" shape="circle" placement="bottom-right">
+        <Avatar
+          radius="full"
+          src="https://i.pravatar.cc/150?u=a04258a2462d826712d"
+        />
+      </Badge>
+
             <User   
                 name="Jane Doe"
                 description="Product Designer"
-                avatarProps={{
-                    src: "https://i.pravatar.cc/150?u=a04258114e29026702d"
-                }}
+                
                 />
           </ListboxItem>
         })}
