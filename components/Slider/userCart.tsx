@@ -70,6 +70,7 @@ const UserCart = () => {
                 <MoreImageGallary/>
             </div>
 
+
             <div className="px-2 pt-6">
                 <small style={{paddingTop:"10px"}} className="text-default-500">Current location</small>
                 <p className="text-black text-tiny">
