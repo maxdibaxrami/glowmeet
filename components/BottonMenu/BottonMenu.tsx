@@ -8,7 +8,7 @@ import { useRouter } from 'next/router'
 
 const BottonMenu =() => {
     const router = useRouter()
-    const [selected, setSelected] = useState("explore");
+    const [selected, setSelected] = useState<any>("explore");
 
     useEffect(()=>{
         router.push(`/${selected}`)
